@@ -89,7 +89,7 @@ Position.prototype = {
         this._col = this._setValue(col);
     },
     _setValue: function(val) {
-        if(!isNaN(val)) 
+        if(isNaN(val)) 
 			throw TypeError("Attempted to set a non-numeric value.");
 		else return val;
     },
