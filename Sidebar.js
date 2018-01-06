@@ -212,6 +212,7 @@ CreatureStatsBlock.prototype = {
 
     grayscaleImage: function() {
         this._image.style.filter = "grayscale(100%)";
+        this._image.style.filter = "gray";
     },
 };
 
