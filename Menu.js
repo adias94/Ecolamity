@@ -58,12 +58,14 @@ MapEditScreen.prototype = {
     _bgPath: "images/backgrounds/",
     _buttonsPath: "images/buttons/",
     _environmentList: [JungleGame, DesertGame, OceanGame], //list all environments (subclasses of Game) here
+	_environmentNames: ["Jungle", "Desert", "Ocean"],
     _minMapSize: 6,
     _maxMapSize: 15,
     _speciesDescrFileNames: ["jungle-desc.png", "desert-desc.png", "ocean-desc.png"], //image that lists descriptions about each species in environment
     _speciesDescrPath: "images/descriptions/",
 
     get _currentEnv() { return this._environmentList[this._currentEnvIndex]; },
+	get _currentEnvName() { return this._environmentNames[this._currentEnvIndex]; },
     get _speciesList() { return this._currentEnv.prototype.speciesList; },
     get _selectedSpecies() { return this._speciesList[this._selectedSpeciesIndex]; },
     get _speciesDescr() { return this._speciesDescrPath + this._speciesDescrFileNames[this._currentEnvIndex]; },
@@ -102,10 +104,7 @@ MapEditScreen.prototype = {
             "url('" + this._bgPath + this._currentEnv.prototype.sidebarBgFile + "')";
     },
     _updateEnvironmentName: function() {
-        var envProto = this._currentEnv.prototype;
-        //extract the environment name from the name of the class that represents it (removing the "Game" part)
-        this._environmentSelector.getElementsByTagName("P")[0].innerHTML = 
-            envProto.constructor.name.slice(0, envProto.constructor.name.length - 4);
+        this._environmentSelector.getElementsByTagName("P")[0].innerHTML = this._currentEnvName;
     },
     _updateSpeciesDetails: function() {
         document.getElementById("species-description").firstElementChild.src = this._speciesDescr;
