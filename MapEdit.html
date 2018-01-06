@@ -1,0 +1,45 @@
+<div id="game">
+    
+    <div>
+        <img id="return-arrow" src="images/buttons/return-arrow.png" />
+        <div id="environment-selector">
+            <h3>Select Environment</h3>
+            <img class="arrow-button" src="images/buttons/left-arrow.png" />
+            <span><p>Jungle</p></span>
+            <img class="arrow-button" src="images/buttons/right-arrow.png" />
+        </div><div id="size-selector">
+            <h3>Set Map Size</h3>
+            <img class="arrow-button" src="images/buttons/left-arrow.png" />
+            <span><p>6</p></span>
+            <img class="arrow-button" src="images/buttons/right-arrow.png" />
+        </div>
+        <div id="species-description">
+            <img src="images/descriptions/jungle-desc.png" />
+        </div>
+        <p class="button">START<br />GAME</p>
+        <p class="button">RESET<br />MAP</p>
+        <p id="random-toggle"><img src="images/buttons/off.png"/>Random 
+            <img class="help-button" src="images/buttons/help.png"/>
+        </p>
+        <p class="help-hover-text">
+            When "Random" is on, creatures are randomly placed on the map.
+        </p>
+    </div>
+    <div>
+        <h3 id="select-creature-header">Select Creature<img class="help-button" src="images/buttons/help.png"/></h3>
+        <p class="help-hover-text">Click on a species to set what type of creature to place on the map</p>
+        <div id="species-list">                    
+            <img src="images/sprites/fern.png"/>
+            <img src="images/sprites/deer.png"/>
+            <img src="images/sprites/boar.png"/>
+            <img src="images/sprites/bear.png"/>
+        </div>
+        <canvas id="map-preview"></canvas>
+        <img class="help-button" src="images/buttons/help.png"/>
+        <p class="help-hover-text">
+            Left-Click a tile on the map to place a creature of the selected species.
+            Right-Click a tile to remove a creature.
+        </p>
+    </div>
+    
+</div>

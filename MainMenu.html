@@ -1,0 +1,152 @@
+<div id="game">
+    <div id="main-menu">
+        <h1>Ecolamity</h1>
+        <ul id="menu-options">
+            <li>Start Game</li>
+            <li>How To Play</li>
+            <li>Credits</li>
+        </ul>
+    </div>
+    <div class="second-menu-screen" id="how-to-play">
+        <h1>How To Play</h1>
+        <p>
+            Ecolamity is a video game which attempts to create a 2D grid-based simulation of the 
+            ecosystems of various natural environments.   Each environment has a specific set of 
+            species that cohabit and interact with each other.   Each species has its own defined 
+            AI which dictates its behavior and interactions with other species.  Among these 
+            behaviors include movement, hunting, and reproduction.  
+        </p>
+        <p>
+            The player of the game selects the type and size of the environment, followed by 
+            selectively placing various creatures of their choosing on any location on the map.  
+            Once the game begins, the player observes the behavior of the creatures they placed 
+            on the map.  The goal of Ecolamity is to create an ecosystem that flourishes over time, 
+            in which varying species can coexist without extinction or the dominance of a single 
+            species.  If all creatures on the map die or only plantation remains in the ecosystem, 
+            then the game ends in failure.
+        </p>
+        <h3>Game Info</h3>
+        <ul>
+            <li>
+                The player creates their desired simulation on the Map Edit Screen, which allows 
+                them to choose the environment, size of the map, types of creatures, and their positions.
+            </li>
+            <li>
+                Environments can potentially have obstacles on the map, which will prevent creatures 
+                from moving to tiles containing them.  The number of obstacles placed on the map is 
+                determined by the environment, each of which has a dedicated percentage that dictates 
+                how much of the map will be covered in obstacles.
+            </li>
+            <li>
+                Time will be expressed by in-game hours. Every 24 hours an in-game day goes by.
+            </li>
+            <li>
+                During the game, a sidebar will be shown which displays the current game time and 
+                contains a user interface for the player to interact with certain game features such 
+                as pausing the game, adjusting the game speed, or returning back to the Map Edit screen.
+            </li>
+            <li>
+                During the game, the stats of every creature will be displayed on the sidebar.  
+                These stats include age, day born, food meter, and creatures killed.
+            </li>
+            <li>
+                The game ends once all creatures on the map are dead or if only plant-life remains.
+            </li>
+        </ul>
+        <h3>Creature Info</h3>
+        <ul>
+            <li>
+                All creatures have a lifespan dictated by their species.  A creature will pass 
+                away if their age surpasses its lifespan.
+            </li>
+            <li>
+                Animals have a “food meter”, which expresses their hunger level.  It ranges from 
+                0 to 4 and by default starts on 3 at the beginning of the game.
+            </li>
+            <li>
+                When an animal hunts prey, it kills and eats them. This will raise their food meter by 1.
+            </li>
+            <li>
+                The food meter depletes over time if food is not eaten, decrementing by 1 every 2 days 
+                (by default) since the animal’s last meal.  An animal will die of starvation if their food 
+                meter reaches 0.
+            </li>
+            <li>
+                Animals will also not hunt prey if their food meter is equal to 4.
+            </li>
+            <li>
+                There will be a cool-down time after an animal eats, so that it does not attempt to 
+                hunt more prey and eat more food until the cool-down time has ended. 
+            </li>
+            <li>
+                Every animal species has a list of predators and prey.
+            </li>
+            <li>
+                Plants get nourishment through photosynthesis; therefore they do not need to search for 
+                food. They get nourishment over time, thus they do not have a food meter.
+            </li>
+            <li>
+                All creatures reach an age of maturity within a certain percentage of their lifespan.  
+                The percentage is dictated by the species.  A creature at age of maturity becomes 
+                capable of reproducing.
+            </li>
+            <li>
+                Plants reproduce asexually. Number of children produced depends on the species.
+            </li>
+            <li>
+                Two animals of the same species reproduce sexually. The number of children 
+                produced depends on the species.
+            </li>
+            <li>
+                There is a cool-down time after a creature has reproduced before it can reproduce again.
+            </li>
+        </ul>
+    </div>
+    <div class="second-menu-screen" id="credits">
+        <h1>Credits</h1>
+        <ul id="credit-list">
+            <li>All Jungle Assets and Ocean Tileset: finalbossblues
+                <a href="https://finalbossblues.itch.io/tf-jungle-tileset" target="_blank">
+                    https://finalbossblues.itch.io/tf-jungle-tileset  
+                </a>
+                <a href="https://finalbossblues.itch.io/animals-sprite-pack" target="_blank">
+                    https://finalbossblues.itch.io/animals-sprite-pack  
+                </a>
+                <a href="http://finalbossblues.com/timefantasy/freebies/free-beach-tileset" target="_blank">
+                    http://finalbossblues.com/timefantasy/freebies/free-beach-tileset
+                </a>
+            </li>
+            <li>Desert Tileset: asukicco
+                <a href="http://pixeljoint.com/pixelart/39107.htm " target="_blank">
+                    http://pixeljoint.com/pixelart/39107.htm 
+                </a>
+            </li>                
+            <li>Snake Sprites: newiceax
+                <a href="http://www008.upp.so-net.ne.jp/newiceax/rtuku4.htm" target="_blank">
+                    http://www008.upp.so-net.ne.jp/newiceax/rtuku4.htm  
+                </a>
+            </li>               
+            <li>Coyote Sprites: Makio-Kuta
+                <a href="https://forums.rpgmakerweb.com/index.php?threads/more-wolves-please.21663/" target="_blank">
+                    https://forums.rpgmakerweb.com/index.php?threads/more-wolves-please.21663/
+                </a>
+            </li>  
+            <li>Boar, Iguana, Tuna, and Shark Sprites: whtdragon
+                <a href="https://forums.rpgmakerweb.com/index.php?threads/whtdragons-animals-and-running-horses-now-with-more-dragons.53552/" target="_blank">
+                    https://forums.rpgmakerweb.com/index.php?threads/whtdragons-animals-and-running-horses-now-with-more-dragons.53552/
+                </a>
+            </li>
+            <li>Octopus Sprites: Mageker
+                <a href="https://www.spriters-resource.com/pc_computer/trickster/sheet/14832/" target="_blank">
+                    https://www.spriters-resource.com/pc_computer/trickster/sheet/14832/ 
+                </a>
+            </li>                 
+            <li>Spinning Earth Animation: Spriteman22
+                <a href="https://scratch.mit.edu/projects/1592721/" target="_blank">
+                    https://scratch.mit.edu/projects/1592721/ 
+                </a>
+            </li>                   
+        </ul>
+    </div>
+    
+</div>
