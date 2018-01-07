@@ -23,7 +23,7 @@
     background-color: rgba(11,11,11,0.7);
 }
 
-#credit-list>li, #how-to-play, #block-container {
+#credit-list>li, #how-to-play, .help-hover-text, #block-container {
     text-align: left;
 }
 
