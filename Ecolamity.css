@@ -187,9 +187,13 @@ body {
     width: 10%;
 }
 
+#map-help {
+    margin-bottom: 30%;
+}
+
 #map-preview { /* CANVAS element: game map representation in which the player places creatures */
     height: 70%; width: 70%;
-    margin-left: 15%;
+    /*margin-left: 15%;*/
 }
 
 

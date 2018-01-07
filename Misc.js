@@ -177,7 +177,6 @@ var AnimatedSprite = function(spriteFileName_, sheetFileName_, tileLength_, tile
     this._image.onload = function() {
         this._sheet.onload = function() {
             this._numFrames = (this._sheet.width / this._image.width);
-            console.log(this._numFrames);
         }.bind(this);
     }.bind(this);
 };
