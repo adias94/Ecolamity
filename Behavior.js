@@ -112,7 +112,7 @@ Behavior.prototype = {
     },
 
 
-    ////list of map checking methods
+    ////list of map checking methods (Predicate Methods)
     ///must be a method that takes a position and checks if it meets a specific condition
     _tileIsEmpty: function(position) {
         if(this._game.map.getAtLocation(position) === 0) return true;

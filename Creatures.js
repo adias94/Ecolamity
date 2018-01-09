@@ -71,8 +71,8 @@ Creature.prototype = {
     },
 
 
-    initializeBehavior: function(gameMap, speedSlider) {
-        this._behavior.initialize(gameMap, speedSlider);
+    initializeBehavior: function(game) {
+        this._behavior.initialize(game);
     },
     stopBehavior: function() { //stop animal behavior
         this._behavior.stopActivity();

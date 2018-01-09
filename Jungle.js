@@ -93,6 +93,7 @@ Deer.prototype._sprite = new AnimatedSprite("deer.png", "deer-sheet.png", 1, 1);
 
 var Boar = function(position_,dayBorn_) { //omnivore
     Animal.call(this,position_,dayBorn_);
+    this._sightRange = 1; //scope range which Boars looks for prey (based on food meter)
 };
 Boar.prototype = Object.create(Animal.prototype);
 Boar.prototype.constructor = Boar;
@@ -100,7 +101,6 @@ Boar.prototype._behaviorType = BoarBehavior;
 Boar.prototype._lifespan = Clock.convertDaysToHours(12);
 Boar.prototype._predatorList = [Bear];
 Boar.prototype._preyList = [Fern, Deer];
-Boar.prototype._sightRange = 1; //scope range which Boars looks for prey (based on food meter)
 Boar.prototype._speed = new MoveSpeed(1.0, 1.25);
 Boar.prototype._sprite = new AnimatedSprite("boar.png", "boar-sheet.png", 1, 1);
 

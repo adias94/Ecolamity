@@ -23,7 +23,7 @@ DOMUtility.assignElementById = function(id) { //return element in DOM, throw err
     if(element === null) throw ReferenceError(id + " is not a valid element.");
     else return element;
 };
-DOMUtility.createDivWithClass = function(classname, parent) { //create a div element with specified 'class' & append to parent node
+DOMUtility.createDivWithClass = function(classname) { //create a div element with specified 'class'
     var div = document.createElement("DIV");
     div.className = classname;
     return div;
@@ -150,7 +150,7 @@ Sprite.prototype = {
     _setSprite: function() { //set sprite to a specific image
         return this._setImage(this._fileName);
     },
-    _setImage: function(fileName, property) {
+    _setImage: function(fileName) {
         var img = document.createElement("img");
         img.src = this._directory + fileName;
         return img;

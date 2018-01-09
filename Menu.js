@@ -9,9 +9,9 @@ MainMenu.prototype = {
     constructor: MainMenu,
 
     initiateAssets: function() {
-        this._changeScreen(this._chosenOption);
         this._initiateStartGameButton();
         this._initiateOptionClick();
+        this._changeScreen(this._chosenOption);
     },
     _initiateStartGameButton: function() {
         this._options[0].addEventListener("click", function() {
@@ -89,8 +89,7 @@ MapEditScreen.prototype = {
         this._initiateArrows();
         this._initiateSpeciesSelect();
         this._initiateButtons();
-        this._initiateHelpButtons();
-        this._setMap();
+        this._createNewMap(this._mapPreview.objectList);  //place objects currently in 'objectList' on map
     },
 
     _updateEnvironmentType: function() {
@@ -99,12 +98,12 @@ MapEditScreen.prototype = {
         this._updateSpeciesDetails();
         this._updateSpeciesImages();
     },
+    _updateEnvironmentName: function() {
+        this._environmentSelector.getElementsByTagName("P")[0].innerHTML = this._currentEnvName;
+    },
     _updateBackground: function() {
         document.getElementById(this._id).style.background = 
             "url('" + this._bgPath + this._currentEnv.prototype.sidebarBgFile + "')";
-    },
-    _updateEnvironmentName: function() {
-        this._environmentSelector.getElementsByTagName("P")[0].innerHTML = this._currentEnvName;
     },
     _updateSpeciesDetails: function() {
         document.getElementById("species-description").firstElementChild.src = this._speciesDescr;
@@ -192,6 +191,7 @@ MapEditScreen.prototype = {
 
         this._initiateRandomButtom();
         this._initiateReturnButton();
+        this._initiateHelpButtons();        
     },
     _initiateRandomButtom: function() {
         var self = this;
@@ -224,11 +224,6 @@ MapEditScreen.prototype = {
                 return function() { helpMessages[j].style.display = "none"; };
             })(i));
         }
-    },
-
-    _setMap: function() { //place objects currently in 'objectList' on map
-        //this method is mainly for placing objects back in original position when returning to Map Edit from Game.
-        this._createNewMap(this._mapPreview.objectList);
     },
 };
 

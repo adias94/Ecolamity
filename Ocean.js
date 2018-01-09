@@ -100,7 +100,7 @@ Octopus.prototype._sprite = new AnimatedSprite("octopus.png", "octopus-sheet.png
 Octopus.prototype.isPrey = function(prey) {
     if(this._foodMeter.level === 1 && prey instanceof Octopus) return true;
     else return Animal.prototype.isPrey.call(this, prey);
-}
+};
 
 
 var Shark = function(position_,dayBorn_) {
