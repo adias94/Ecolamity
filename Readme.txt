@@ -1,4 +1,9 @@
-///Ecolamity is a work in progress/////////////////////////////////////////////////
+:::Ver 3.1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/*** Changelog ***/
+1) Fixed minor remaining bugs.
+2) Minified CSS & JS code to reduce file size and improve load times
+3) Combined all JS code into one file to reduce number of http requests
+4) Ecolamity is ready for deployment.
 
 :::Ver 3.0::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 /*** Changelog ***/
