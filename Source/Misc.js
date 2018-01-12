@@ -172,13 +172,9 @@ ObstacleSprite.prototype._directory = "images/obstacles/";
 
 var AnimatedSprite = function(spriteFileName_, sheetFileName_, tileLength_, tileWidth_) {
     Sprite.call(this, spriteFileName_, tileLength_, tileWidth_);
+    this._numFrames = 3;
     this._sheetFileName = sheetFileName_;
     this._sheet = this._setSheet();  //sprite sheet used to animate creature during movement
-    this._image.onload = function() {
-        this._sheet.onload = function() {
-            this._numFrames = (this._sheet.width / this._image.width);
-        }.bind(this);
-    }.bind(this);
 };
 AnimatedSprite.prototype = Object.create(Sprite.prototype);
 AnimatedSprite.prototype.constructor = AnimatedSprite;
