@@ -57,11 +57,11 @@ MapEditScreen.prototype = {
     _id: "game",
     _bgPath: "images/backgrounds/",
     _buttonsPath: "images/buttons/",
-    _environmentList: [JungleGame, DesertGame, OceanGame], //list all environments (subclasses of Game) here
-	_environmentNames: ["Jungle", "Desert", "Ocean"],
+    _environmentList: [ForestGame, DesertGame, OceanGame], //list all environments (subclasses of Game) here
+	_environmentNames: ["Forest", "Desert", "Ocean"],
     _minMapSize: 6,
     _maxMapSize: 15,
-    _speciesDescrFileNames: ["jungle-desc.png", "desert-desc.png", "ocean-desc.png"], //image that lists descriptions about each species in environment
+    _speciesDescrFileNames: ["forest-desc.png", "desert-desc.png", "ocean-desc.png"], //image that lists descriptions about each species in environment
     _speciesDescrPath: "images/descriptions/",
 
     get _currentEnv() { return this._environmentList[this._currentEnvIndex]; },

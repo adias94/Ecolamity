@@ -92,12 +92,15 @@ body {
     list-style-type: none;
     padding: 1%;
 }
-    #credit-list a {       
+    #credit-list a {
         display: block;
         padding-left: 3%;
     }
     #credit-list a:hover, #credit-list a {
         cursor: default;
+    }
+    #credit-list a, #credit-list a:visited {
+        color: grey;
     }
 
 /**** MAP EDIT SCREEN ***/

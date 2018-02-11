@@ -1,3 +1,10 @@
+:::Ver 3.2::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+/*** Changelog ***/
+1) Reduced speed of spinning earth animation on Main Menu screen to improve option readability
+2) Changed credits links to grey for improved readability
+3) Renamed Jungle environment to Forest environment, since it more accurately represented 
+   the available species for that environment.
+
 :::Ver 3.1::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 /*** Changelog ***/
 1) Fixed minor remaining bugs.

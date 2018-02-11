@@ -1,6 +1,6 @@
 
 
-////////Jungle Obstacles///////////////////////////////////////////////////////////////////////////////////////////////////
+////////Forest Obstacles///////////////////////////////////////////////////////////////////////////////////////////////////
 var Tree = function(position_) {
     Obstacle.call(this, position_);
 };
@@ -9,7 +9,7 @@ Tree.prototype.constructor = Tree;
 Tree.prototype._sprite = new ObstacleSprite("tree.png", 2, 1);
 
 
-////////Jungle Creatures////////////////////////////////////////////////////////////////////////////////////////////////////
+////////Forest Creatures////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ////Behaviors
 
@@ -139,15 +139,15 @@ Bear.prototype._speed = null; //each bear will define its own moveSpeed object
 Bear.prototype._sprite = new AnimatedSprite("bear.png", "bear-sheet.png", 1, 1);
 
 
-////////Jungle Game/////////////////////////////////////////////////////////////////////////////////////////////////////////
-var JungleGame = function(mapSize_, objectList_) {
+////////Forest Game/////////////////////////////////////////////////////////////////////////////////////////////////////////
+var ForestGame = function(mapSize_, objectList_) {
     Game.call(this, mapSize_, objectList_);
 };
 
-JungleGame.prototype = Object.create(Game.prototype);
-JungleGame.prototype.constructor = JungleGame;
-JungleGame.prototype._mapBgFile = "jungle.png";
-JungleGame.prototype._obstacleList = [Tree];
-JungleGame.prototype._obstaclePercent = 0.25;
-JungleGame.prototype._sidebarBgFile = "jungle_tile.png";
-JungleGame.prototype._speciesList = [Fern,Deer,Boar,Bear];
+ForestGame.prototype = Object.create(Game.prototype);
+ForestGame.prototype.constructor = ForestGame;
+ForestGame.prototype._mapBgFile = "forest.png";
+ForestGame.prototype._obstacleList = [Tree];
+ForestGame.prototype._obstaclePercent = 0.25;
+ForestGame.prototype._sidebarBgFile = "forest_tile.png";
+ForestGame.prototype._speciesList = [Fern,Deer,Boar,Bear];
