@@ -76,6 +76,7 @@ body {
 
 .second-menu-screen { /* DIV element: represents right screen on main menu */
     background: url('images/backgrounds/space_tile.png');
+    text-shadow:-1px -1px 0 blue,1px -1px 0 blue,-1px 1px 0 blue,1px 1px 0 blue;
 }
 
 #how-to-play { /* DIV element: How To Play screen */
